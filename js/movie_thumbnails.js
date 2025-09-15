@@ -1,5 +1,8 @@
+
 function genThumbnail(movieObject) {
+    const link = "../movie_details.html?id=" + Object.keys(movieObject)[0].toString();
     console.log(movieObject);
+    console.log(link);
     return `
     <div class="card">
         <div class="card-body border-1">
@@ -8,7 +11,7 @@ function genThumbnail(movieObject) {
                 ${movieObject["description"]}
                 </br><b>Box Office: </b> ${movieObject["boxOffice"]}
             </div>
-            <a href = "https://google.com" class = "button">View Details</a>
+            <a href = ${link} class = "thumbnsilLinkbutton">View Details</a>
         </div>
     </div>
     
@@ -16,16 +19,11 @@ function genThumbnail(movieObject) {
 }
 
 
-
-function genThumbnails(moviesList) {
-    console.log(moviesList);
+function genThumbnails(moviesSet) {
 
     let thumbnailList = ``
-    moviesList.forEach((movieObject) => {
-        alert('hi')
-
-        console.log(movieObject);
-            thumbnailList = thumbnailList + genThumbnail(movieObject);
+    moviesSet.forEach( (movieObject) => {
+        thumbnailList = thumbnailList + genThumbnail(movieObject);
     })
     return thumbnailList;
 }

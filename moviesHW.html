@@ -21,14 +21,12 @@
 <script src="js/movie_load.js"> </script>
 <script>
     "use strict"
-    const MAX_THUMBNAILS_SHOWN = 25;
 
 
     document.addEventListener("DOMContentLoaded", function () {
-        let movieObjectList = getMoviesList()
-        console.log(movieObjectList)
+        let movieObjectList = getMoviesSet()
         document.getElementById("topNavbar").innerHTML = genNavbar("home");
-        // document.getElementById("movieThumbnails").innerHTML = genThumbnails(movieObjectList["movies"]);
+        document.getElementById("movieThumbnails").innerHTML = genThumbnails(movieObjectList);
 
 
     })
