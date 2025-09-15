@@ -18,15 +18,21 @@
         crossorigin="anonymous"></script>
 <script src="js/page_header.js"></script>
 <script src=" js/movie_thumbnails.js"></script>
+<script src="js/movie_load.js"> </script>
 <script>
     "use strict"
     const MAX_THUMBNAILS_SHOWN = 25;
-    const movieObjectList = [];
-    moviePopulate(movieObjectList);
+
+
     document.addEventListener("DOMContentLoaded", function () {
+        let movieObjectList = getMoviesList()
+        console.log(movieObjectList)
         document.getElementById("topNavbar").innerHTML = genNavbar("home");
-        document.getElementById("movieThumbnails").innerHTMl = genThumbnails(movieObjects);
+        // document.getElementById("movieThumbnails").innerHTML = genThumbnails(movieObjectList["movies"]);
+
+
     })
 </script>
 </body>
+
 </html>
