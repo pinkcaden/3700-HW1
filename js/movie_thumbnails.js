@@ -1,8 +1,15 @@
-function genThumbnail(movieObject) {
-    const link = "../movie_details.html?id=" + Object.keys(movieObject)[0].toString();
-    console.log(movieObject);
-    console.log(link);
+function genThumbnail(movieKey, movieObject) {
+    const link = "../movie_details.html"
+        //?id=" + movieKey;
+    let sessionStoreMovie = function () {
+        console.log('clicked');
+        sessionStorage.setItem("movieKey", movieObject);
+        console.log('success')
+    }
+
+
     return `
+
     <div class="card">
         <div class="card-body border-1">
             <div class = "card-title">${movieObject["title"]} (${movieObject["year"]})</div>
@@ -10,7 +17,7 @@ function genThumbnail(movieObject) {
                 ${movieObject["description"]}
                 </br><b>Box Office: </b> ${movieObject["boxOffice"]}
             </div>
-            <a href = ${link} class = "thumbnsilLinkbutton">View Details</a>
+            <a href = ${link} class = "thumbnilLinkbutton" onclick = ${sessionStoreMovie}>View Details</a>
         </div>
     </div>
     
@@ -21,10 +28,10 @@ function genThumbnail(movieObject) {
 function genThumbnails(moviesSet) {
 
     let thumbnailList = ``
-    moviesSet.forEach((movieObject) => {
-        thumbnailList = thumbnailList + genThumbnail(movieObject);
+    Object.keys(moviesSet).forEach((movieKey) => {
+        thumbnailList += genThumbnail(movieKey, moviesSet[movieKey]);
     })
-    return thumbnailList;
+    return thumbnailList
 }
 
 
