@@ -1,4 +1,3 @@
-
 function genThumbnail(movieObject) {
     const link = "../movie_details.html?id=" + Object.keys(movieObject)[0].toString();
     console.log(movieObject);
@@ -22,7 +21,7 @@ function genThumbnail(movieObject) {
 function genThumbnails(moviesSet) {
 
     let thumbnailList = ``
-    moviesSet.forEach( (movieObject) => {
+    moviesSet.forEach((movieObject) => {
         thumbnailList = thumbnailList + genThumbnail(movieObject);
     })
     return thumbnailList;

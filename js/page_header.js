@@ -1,5 +1,5 @@
-
-let navItems = {
+// Will be eliminated after JSON query is written
+let navItemsContent = {
     "home": [
         {
             fw: "fw-bold",
@@ -31,6 +31,10 @@ let navItems = {
     ]
 }
 
+function getNavItemsContent(){
+    // Will be replaced by JSON file query
+    return navItemsContent
+}
 
 function genNavbar(pageType) {
     return `
@@ -52,7 +56,7 @@ function genBrand() {
 function genNavLinks(pageType) {
 
     let itemStr = ``;
-    const items = navItems[pageType];
+    const items = getNavItemsContent()[pageType];
 
     for (const item of items) {
         itemStr = itemStr + `<li class = "${item.fw} nav-item text-black border border-dark m-1 p-1" ><a href = ${item.href} class = "nav-link active text-black " >${item.text}</a></li>`

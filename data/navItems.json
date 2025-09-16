@@ -1,0 +1,32 @@
+
+{
+  "home": [
+    {
+      "fw": "fw-bold",
+      "href": "moviesHW.html",
+      "text": "Home"
+    }, {
+      "fw": "fw-normal",
+      "href": "https://www.imdb.com/chart/top/",
+      "text": "Top Rated"
+    }, {
+      "fw": "fw-normal",
+      "href": "https://www.fandango.com/movies-in-theaters",
+      "text": "Latest"
+    }],
+  "details": [
+    {
+      "fw": "fw-normal",
+      "href": "moviesHW.html",
+      "text": "Home"
+    }, {
+      "fw": "fw-bold",
+      "href": "https://www.reddit.com/r/movies/comments/kiivkc/how_would_one_begin_to_learn_about_movies/",
+      "text": "Movie Details"
+    }, {
+      "fw": "-normal",
+      "href": "https://www.fandango.com/movies-in-theaters",
+      "text": "Latest"
+    }
+  ]
+}
