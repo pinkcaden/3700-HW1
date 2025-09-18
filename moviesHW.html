@@ -20,7 +20,7 @@
 <script>
     "use strict"
     document.addEventListener("DOMContentLoaded", function () {
-        document.getElementById("topNavbar").innerHTML = genNavbar("home");
+        document.getElementById("topNavbar").appendChild(genNavbar("home"));
         document.getElementById("movieThumbnails").appendChild(genThumbnails(movieObjectList));
     })
 </script>

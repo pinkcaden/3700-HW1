@@ -11,18 +11,20 @@
 <body>
 <div id="topNavbar"></div>
 <div id = "movieBanner"></div>
-<div class = "container">
-    <ul class = "row-cols-2">
-    <li id = "movieInformation" ></li>wq
-    <li id = movieInformation ></li>
-    </ul>
 
+<div class = "container">
+    <div class = "row">
+        <div id = "movieInformation" class = "col"></div>
+        <div id = "castAndCrew" class = "col"></div>
+    </div>
 </div>
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
 <script src="js/page_header.js"></script>
+<script src="js/movie_details.js"></script>
 
 <script>
     document.addEventListener("DOMContentLoaded", function () {
@@ -30,7 +32,10 @@
         const movieObject = JSON.parse(sessionStorage.getItem(movieIdentifier));
         sessionStorage.removeItem(movieIdentifier)
 
-        document.getElementById("topNavbar").innerHTML = genNavbar("details");
+        document.getElementById("topNavbar").appendChild(genNavbar("details"));
+        document.getElementById("movieBanner").appendChild(genMovieBanner(movieObject));
+        document.getElementById("movieInformation").appendChild(genMovieInformation(movieObject));
+        document.getElementById("castAndCrew").appendChild(genCastAndCrew(movieObject));
 
     })
 </script>

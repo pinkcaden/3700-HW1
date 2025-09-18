@@ -6,7 +6,7 @@ function genThumbnail(movieKey, movieObject) {
     const link = "./movie_details.html?id=" + movieKey
 
     const movieThumbnail = document.createElement('div');
-    movieThumbnail.className = "card";
+    movieThumbnail.classList.add("card");
     movieThumbnail.innerHTML =
         `<div class="card-body border-1">
             <div class = "card-title">${movieObject["title"]} (${movieObject["year"]})</div>

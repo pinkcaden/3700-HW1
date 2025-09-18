@@ -37,13 +37,21 @@ function getNavItemsContent(){
 }
 
 function genNavbar(pageType) {
-    return `
-    <nav class = "navbar navbar-expand-lg navbar-dark bg-light text-black">
+    const navBar = document.createElement("div");
+    navBar.classList.add("navbar", "navbar-expand-lg", "navbar-dark", "bg-light", "text-black");
+    navBar.innerHTML =`
         <div class = "container-fluid" >
             ${genBrand()}
             ${genNavLinks(pageType)}
-        </div>
-    </nav>`
+        </div>`
+    // return `
+    // <nav class = "navbar navbar-expand-lg navbar-dark bg-light text-black">
+    //     <div class = "container-fluid" >
+    //         ${genBrand()}
+    //         ${genNavLinks(pageType)}
+    //     </div>
+    // </nav>`
+    return navBar
 }
 
 function genBrand() {
