@@ -422,10 +422,10 @@ const movieObjectList =
 
 
 function getMoviesSet() {
-    let moviesSet = {}
+    let moviesSet = movieObjectList;
     // loading movies from api^
 
-    movieObjectList.forEach(movieObject =>{
+    moviesSet.forEach(movieObject =>{
         const identifier = Date.now().toString()+ Math.random().toString();
         moviesSet[identifier] = movieObject;
     });

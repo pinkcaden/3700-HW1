@@ -10,6 +10,14 @@
 </head>
 <body>
 <div id="topNavbar"></div>
+<div id = "movieBanner"></div>
+<div class = "container">
+    <ul class = "row-cols-2">
+    <li id = "movieInformation" ></li>wq
+    <li id = movieInformation ></li>
+    </ul>
+
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
@@ -18,7 +26,12 @@
 
 <script>
     document.addEventListener("DOMContentLoaded", function () {
+        const movieIdentifier = new URLSearchParams(window.location.search).get("id");
+        const movieObject = JSON.parse(sessionStorage.getItem(movieIdentifier));
+        sessionStorage.removeItem(movieIdentifier)
+
         document.getElementById("topNavbar").innerHTML = genNavbar("details");
+
     })
 </script>
 </body>
