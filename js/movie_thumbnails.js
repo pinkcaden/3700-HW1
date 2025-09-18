@@ -1,6 +1,3 @@
-function sessionStoreMovie(movieId) {
-}
-
 
 function genThumbnail(movieKey, movieObject) {
     const link = "./movie_details.html?id=" + movieKey
@@ -22,17 +19,15 @@ function genThumbnail(movieKey, movieObject) {
 
     return movieThumbnail;
 
-
-
-
-
 }
 
 
-function genThumbnails(moviesSet) {
+function genThumbnailSet(moviesSet) {
+    console.log(moviesSet);
 
     let thumbnailList = document.createElement("div");
     Object.keys(moviesSet).forEach((movieKey) => {
+        console.log(movieKey)
         thumbnailList.appendChild( genThumbnail(movieKey, moviesSet[movieKey]));
     })
     return thumbnailList

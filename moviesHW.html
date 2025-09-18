@@ -10,18 +10,23 @@
 <div id="topNavbar"></div>
 <div class="container-fluid text-black h1 text-center p-4 m-4 ">Pink Movie Collection</div>
 <div id="movieThumbnails"></div>
+<div id = "footer"></div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
 <script src="js/page_header.js"></script>
-<script src=" js/movie_thumbnails.js"></script>
+<script src="js/movie_thumbnails.js"></script>
 <script src="js/movie_load.js"></script>
+<script src ="js/page_footer.js"></script>
+
 <script>
     "use strict"
     document.addEventListener("DOMContentLoaded", function () {
+        const movieObjectList = getMoviesObject();
         document.getElementById("topNavbar").appendChild(genNavbar("home"));
-        document.getElementById("movieThumbnails").appendChild(genThumbnails(movieObjectList));
+        document.getElementById("movieThumbnails").appendChild(genThumbnailSet(movieObjectList));
+        document.getElementById("footer").appendChild(genFooter());
     })
 </script>
 </body>

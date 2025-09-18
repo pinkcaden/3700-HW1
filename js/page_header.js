@@ -38,7 +38,7 @@ function getNavItemsContent(){
 
 function genNavbar(pageType) {
     const navBar = document.createElement("div");
-    navBar.classList.add("navbar", "navbar-expand-lg", "navbar-dark", "bg-light", "text-black");
+    navBar.classList.add("navbar", "navbar-expand");
     navBar.innerHTML =`
         <div class = "container-fluid" >
             ${genBrand()}

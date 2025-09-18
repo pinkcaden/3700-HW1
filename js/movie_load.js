@@ -1,7 +1,7 @@
 const MOVIES_URL = "https://localhost:3000/movies"
 const MOCK_MOVIES_URL = "./data/movies.json";
 
-const movieObjectList =
+const movieObjs =
     [
         {
             "id": 1,
@@ -421,11 +421,12 @@ const movieObjectList =
 
 
 
-function getMoviesSet() {
-    let moviesSet = movieObjectList;
+function getMoviesObject() {
+    const moviesFetch = movieObjs;
     // loading movies from api^
+    const moviesSet = {}
 
-    moviesSet.forEach(movieObject =>{
+    moviesFetch.forEach(movieObject =>{
         const identifier = Date.now().toString()+ Math.random().toString();
         moviesSet[identifier] = movieObject;
     });
