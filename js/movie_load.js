@@ -1,5 +1,4 @@
 const MOVIES_URL = "https://localhost:3000/movies"
-const MOCK_MOVIES_URL = "./data/movies.json";
 
 const movieObjs =
     [
@@ -419,19 +418,31 @@ const movieObjs =
     ]
 
 
+async function getMoviesObject() {
+    try {
+        const response = await fetch(MOVIES_URL);
 
+        if (!response.ok) {
+            console.log(Error(response.statusText));
+        } else {
 
-function getMoviesObject() {
-    const moviesFetch = movieObjs;
-    // loading movies from api^
-    const moviesSet = {}
+            const moviesSet = {}
 
-    moviesFetch.forEach(movieObject =>{
-        const identifier = Date.now().toString()+ Math.random().toString();
-        moviesSet[identifier] = movieObject;
-    });
+            const moviesFetch = await response.json();
+            console.log(moviesFetch);
+            moviesFetch.forEach(movieObject => {
+                const identifier = Date.now().toString() + Math.random().toString();
+                moviesSet[identifier] = movieObject;
+            });
+            return moviesSet;
 
+        }
 
-    return moviesSet;
+    } catch (error) {
+        console.log(error);
+
+    }
 
 }
+
+

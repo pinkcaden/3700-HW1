@@ -2,9 +2,11 @@ function genThumbnail(movieKey, movieObject) {
     const link = "./movie_details.html?id=" + movieKey
 
     const movieThumbnail = document.createElement('div');
-    movieThumbnail.classList.add("card", "rounded-3", "m-3", "p-1", "card-sm");
+    movieThumbnail.classList.add("container", "rounded-3", "container-sm");
     movieThumbnail.innerHTML =
-        `<div class="card-body border-1">
+
+        `<div class = "card rounded-3">
+    <div class="card-body border-1">
             <div class = "card-title">${movieObject["title"]} (${movieObject["year"]})</div>
             <div class = "card-text my-1">
                 ${movieObject["description"]}
@@ -12,7 +14,8 @@ function genThumbnail(movieKey, movieObject) {
             </div >
             <a href = ${link} class = "btn btn-primary m-1" >View Details</a>
 
-        </div>`
+        </div>
+    </div>`
     movieThumbnail.addEventListener("click", function () {
         sessionStorage.setItem(movieKey, JSON.stringify(movieObject));
     });
