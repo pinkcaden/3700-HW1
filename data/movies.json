@@ -1,5 +1,6 @@
 {
-  "movies": [
+  "movies":
+  [
     {
       "id": 1,
       "title": "Gladiator",
@@ -9,22 +10,10 @@
       "director": "Ridley Scott",
       "budget": "103M",
       "actors": [
-        {
-          "name": "Russell Crowe",
-          "role": "Maximus Decimus Meridius"
-        },
-        {
-          "name": "Joaquin Phoenix",
-          "role": "Commodus"
-        },
-        {
-          "name": "Connie Nielsen",
-          "role": "Lucilla"
-        },
-        {
-          "name": "Oliver Reed",
-          "role": "Proximo"
-        }
+        {"name": "Russell Crowe", "role": "Maximus Decimus Meridius"},
+        {"name": "Joaquin Phoenix", "role": "Commodus"},
+        {"name": "Connie Nielsen", "role": "Lucilla"},
+        {"name": "Oliver Reed", "role": "Proximo"}
       ]
     },
     {
@@ -36,26 +25,11 @@
       "director": "Peter Jackson",
       "budget": "94M",
       "actors": [
-        {
-          "name": "Elijah Wood",
-          "role": "Frodo Baggins"
-        },
-        {
-          "name": "Viggo Mortensen",
-          "role": "Aragorn"
-        },
-        {
-          "name": "Ian McKellen",
-          "role": "Gandalf"
-        },
-        {
-          "name": "Orlando Bloom",
-          "role": "Legolas"
-        },
-        {
-          "name": "Sean Bean",
-          "role": "Boromir"
-        }
+        {"name": "Elijah Wood", "role": "Frodo Baggins"},
+        {"name": "Viggo Mortensen", "role": "Aragorn"},
+        {"name": "Ian McKellen", "role": "Gandalf"},
+        {"name": "Orlando Bloom", "role": "Legolas"},
+        {"name": "Sean Bean", "role": "Boromir"}
       ]
     },
     {
@@ -67,26 +41,11 @@
       "director": "Anthony and Joe Russo",
       "budget": "356M",
       "actors": [
-        {
-          "name": "Robert Downey Jr.",
-          "role": "Tony Stark / Iron Man"
-        },
-        {
-          "name": "Chris Evans",
-          "role": "Steve Rogers / Captain America"
-        },
-        {
-          "name": "Mark Ruffalo",
-          "role": "Bruce Banner / Hulk"
-        },
-        {
-          "name": "Chris Hemsworth",
-          "role": "Thor"
-        },
-        {
-          "name": "Scarlett Johansson",
-          "role": "Natasha Romanoff / Black Widow"
-        }
+        {"name": "Robert Downey Jr.", "role": "Tony Stark / Iron Man"},
+        {"name": "Chris Evans", "role": "Steve Rogers / Captain America"},
+        {"name": "Mark Ruffalo", "role": "Bruce Banner / Hulk"},
+        {"name": "Chris Hemsworth", "role": "Thor"},
+        {"name": "Scarlett Johansson", "role": "Natasha Romanoff / Black Widow"}
       ]
     },
     {
@@ -98,22 +57,10 @@
       "director": "Francis Ford Coppola",
       "budget": "6M",
       "actors": [
-        {
-          "name": "Marlon Brando",
-          "role": "Vito Corleone"
-        },
-        {
-          "name": "Al Pacino",
-          "role": "Michael Corleone"
-        },
-        {
-          "name": "James Caan",
-          "role": "Santino 'Sonny' Corleone"
-        },
-        {
-          "name": "Robert Duvall",
-          "role": "Tom Hagen"
-        }
+        {"name": "Marlon Brando", "role": "Vito Corleone"},
+        {"name": "Al Pacino", "role": "Michael Corleone"},
+        {"name": "James Caan", "role": "Santino 'Sonny' Corleone"},
+        {"name": "Robert Duvall", "role": "Tom Hagen"}
       ]
     },
     {
@@ -125,22 +72,10 @@
       "director": "Quentin Tarantino",
       "budget": "8M",
       "actors": [
-        {
-          "name": "John Travolta",
-          "role": "Vincent Vega"
-        },
-        {
-          "name": "Samuel L. Jackson",
-          "role": "Jules Winnfield"
-        },
-        {
-          "name": "Uma Thurman",
-          "role": "Mia Wallace"
-        },
-        {
-          "name": "Bruce Willis",
-          "role": "Butch Coolidge"
-        }
+        {"name": "John Travolta", "role": "Vincent Vega"},
+        {"name": "Samuel L. Jackson", "role": "Jules Winnfield"},
+        {"name": "Uma Thurman", "role": "Mia Wallace"},
+        {"name": "Bruce Willis", "role": "Butch Coolidge"}
       ]
     },
     {
@@ -152,22 +87,10 @@
       "director": "Christopher Nolan",
       "budget": "185M",
       "actors": [
-        {
-          "name": "Christian Bale",
-          "role": "Bruce Wayne / Batman"
-        },
-        {
-          "name": "Heath Ledger",
-          "role": "The Joker"
-        },
-        {
-          "name": "Aaron Eckhart",
-          "role": "Harvey Dent / Two-Face"
-        },
-        {
-          "name": "Michael Caine",
-          "role": "Alfred Pennyworth"
-        }
+        {"name": "Christian Bale", "role": "Bruce Wayne / Batman"},
+        {"name": "Heath Ledger", "role": "The Joker"},
+        {"name": "Aaron Eckhart", "role": "Harvey Dent / Two-Face"},
+        {"name": "Michael Caine", "role": "Alfred Pennyworth"}
       ]
     },
     {
@@ -179,242 +102,57 @@
       "director": "Robert Zemeckis",
       "budget": "55M",
       "actors": [
-        {
-          "name": "Tom Hanks",
-          "role": "Forrest Gump"
-        },
-        {
-          "name": "Robin Wright",
-          "role": "Jenny Curran"
-        },
-        {
-          "name": "Gary Sinise",
-          "role": "Lieutenant Dan Taylor"
-        },
-        {
-          "name": "Mykelti Williamson",
-          "role": "Bubba Blue"
-        }
+        {"name": "Tom Hanks", "role": "Forrest Gump"},
+        {"name": "Robin Wright", "role": "Jenny Curran"},
+        {"name": "Gary Sinise", "role": "Lieutenant Dan Taylor"},
+        {"name": "Mykelti Williamson", "role": "Bubba Blue"}
       ]
     },
     {
       "id": 8,
-      "title": "Shadowfall",
-      "description": "In a dystopian future, a rogue hacker uncovers a government conspiracy that could destroy what's left of free society.",
-      "year": 2023,
-      "boxOffice": "312.7M",
-      "director": "Ava Thornton",
-      "budget": "85M",
+      "title": "The Lord of the Rings: The Fellowship of the Ring",
+      "description": "A meek Hobbit and eight companions set out on a journey to destroy the One Ring and the Dark Lord Sauron.",
+      "year": 2001,
+      "boxOffice": "898.2M",
+      "director": "Peter Jackson",
+      "budget": "93M",
       "actors": [
-        {
-          "name": "Liam Ryder",
-          "role": "Kade Voss"
-        },
-        {
-          "name": "Naomi Blair",
-          "role": "Agent Mira"
-        },
-        {
-          "name": "Julian West",
-          "role": "Director Halden"
-        },
-        {
-          "name": "Zara Kim",
-          "role": "Echo"
-        }
+        {"name": "Elijah Wood", "role": "Frodo Baggins"},
+        {"name": "Ian McKellen", "role": "Gandalf"},
+        {"name": "Viggo Mortensen", "role": "Aragorn"},
+        {"name": "Sean Astin", "role": "Samwise Gamgee"},
+        {"name": "Orlando Bloom", "role": "Legolas"}
       ]
     },
     {
       "id": 9,
-      "title": "The Silent Summit",
-      "description": "A team of mountaineers is stranded on the world’s highest peak, where silence hides a deadly secret.",
-      "year": 2021,
-      "boxOffice": "146.9M",
-      "director": "Marco Villanueva",
-      "budget": "48M",
+      "title": "King Kong",
+      "description": "A greedy film producer assembles a team of moviemakers and sets out for the infamous Skull Island.",
+      "year": 2005,
+      "boxOffice": "562.4M",
+      "director": "Peter Jackson",
+      "budget": "207M",
       "actors": [
-        {
-          "name": "Elena Brooks",
-          "role": "Dr. Lena Carter"
-        },
-        {
-          "name": "Thomas Yue",
-          "role": "Rajiv Batra"
-        },
-        {
-          "name": "Cameron Dean",
-          "role": "Mason Holt"
-        },
-        {
-          "name": "Farah Ali",
-          "role": "Zara Khan"
-        }
+        {"name": "Naomi Watts", "role": "Ann Darrow"},
+        {"name": "Jack Black", "role": "Carl Denham"},
+        {"name": "Adrien Brody", "role": "Jack Driscoll"},
+        {"name": "Thomas Kretschmann", "role": "Captain Englehorn"}
       ]
     },
     {
       "id": 10,
-      "title": "Neon Drift",
-      "description": "In the neon-lit underworld of Tokyo’s illegal street racing scene, a young driver must win one last race to save his family.",
-      "year": 2022,
-      "boxOffice": "204.3M",
-      "director": "Kenji Sakamoto",
-      "budget": "65M",
+      "title": "Alien",
+      "description": "The crew of a commercial spacecraft encounters a deadly lifeform after investigating a mysterious transmission.",
+      "year": 1979,
+      "boxOffice": "106.3M",
+      "director": "Ridley Scott",
+      "budget": "11M",
       "actors": [
-        {
-          "name": "Jace Carter",
-          "role": "Ryker Takeda"
-        },
-        {
-          "name": "Aya Mori",
-          "role": "Emi Kuroda"
-        },
-        {
-          "name": "Leon Grant",
-          "role": "Cole Strickland"
-        },
-        {
-          "name": "Mina Park",
-          "role": "Yuki"
-        }
-      ]
-    },
-    {
-      "id": 11,
-      "title": "Eclipse Protocol",
-      "description": "A disgraced astronaut returns to Earth only to discover a covert mission is already underway to prevent a solar catastrophe.",
-      "year": 2024,
-      "boxOffice": "379.8M",
-      "director": "Natalie Greer",
-      "budget": "110M",
-      "actors": [
-        {
-          "name": "Marcus Lane",
-          "role": "Commander Elias Drake"
-        },
-        {
-          "name": "Sophia Wren",
-          "role": "Dr. Aria Holt"
-        },
-        {
-          "name": "Dev Patel",
-          "role": "Ravi Mehta"
-        },
-        {
-          "name": "Gina Torres",
-          "role": "General Monroe"
-        }
-      ]
-    },
-    {
-      "id": 12,
-      "title": "Whispers in the Fog",
-      "description": "In a sleepy coastal town, a journalist uncovers a series of murders tied to a centuries-old legend.",
-      "year": 2019,
-      "boxOffice": "94.2M",
-      "director": "Declan Marsh",
-      "budget": "25M",
-      "actors": [
-        {
-          "name": "Clara Dunn",
-          "role": "Elena Voss"
-        },
-        {
-          "name": "Jack Morrissey",
-          "role": "Sheriff Tom Rourke"
-        },
-        {
-          "name": "Emily Zhao",
-          "role": "Leah Chen"
-        },
-        {
-          "name": "Richard Boone",
-          "role": "Silas Granger"
-        }
-      ]
-    },
-    {
-      "id": 13,
-      "title": "The Last Ember",
-      "description": "A young mage must harness a forbidden power to stop an ancient evil from consuming the world.",
-      "year": 2025,
-      "boxOffice": "420.1M",
-      "director": "Rami Korin",
-      "budget": "120M",
-      "actors": [
-        {
-          "name": "Theo Maddox",
-          "role": "Kael Emberborn"
-        },
-        {
-          "name": "Isla Monroe",
-          "role": "Selene Virel"
-        },
-        {
-          "name": "Dante Cruz",
-          "role": "Thorne"
-        },
-        {
-          "name": "Maya Lin",
-          "role": "High Priestess Anara"
-        }
-      ]
-    },
-    {
-      "id": 14,
-      "title": "Frame by Frame",
-      "description": "A reclusive film editor realizes the footage he's restoring contains evidence of a decades-old crime.",
-      "year": 2020,
-      "boxOffice": "67.5M",
-      "director": "Jeanette Holloway",
-      "budget": "15M",
-      "actors": [
-        {
-          "name": "Noah Chambers",
-          "role": "Eli Grant"
-        },
-        {
-          "name": "Rose Delaney",
-          "role": "Mara Quinn"
-        },
-        {
-          "name": "Omar Kingsley",
-          "role": "Detective Jules"
-        },
-        {
-          "name": "Annika Graves",
-          "role": "Sylvia Hart"
-        }
-      ]
-    },
-    {
-      "id": 15,
-      "title": "Iron Saints",
-      "description": "In a post-apocalyptic wasteland, a group of armored monks protect the last remnants of civilization from raiders and machines.",
-      "year": 2023,
-      "boxOffice": "298.4M",
-      "director": "Luis Tanaka",
-      "budget": "90M",
-      "actors": [
-        {
-          "name": "Tobias Kane",
-          "role": "Brother Malric"
-        },
-        {
-          "name": "Jun Park",
-          "role": "Warden Vex"
-        },
-        {
-          "name": "Amara Diaz",
-          "role": "Sister Kyra"
-        },
-        {
-          "name": "Henry Giles",
-          "role": "The Iron King"
-        }
+        {"name": "Sigourney Weaver", "role": "Ellen Ripley"},
+        {"name": "Tom Skerritt", "role": "Dallas"},
+        {"name": "John Hurt", "role": "Kane"},
+        {"name": "Ian Holm", "role": "Ash"}
       ]
     }
   ]
 }
-
-
-

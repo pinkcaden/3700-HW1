@@ -17,17 +17,31 @@
         crossorigin="anonymous"></script>
 <script src="js/page_header.js"></script>
 <script src="js/movie_thumbnails.js"></script>
-<script src="js/movie_load.js"></script>
 <script src ="js/page_footer.js"></script>
 
 <script>
     "use strict"
+    async function loadMovies(){
+        let moviesSet = {}
+        await fetch(MOVIES_URL)
+            .then(res => res.json())
+            .then(prom => {
+                prom.forEach(movieObject => {
+
+                    const identifier = Date.now().toString() + Math.random().toString();
+                    moviesSet[identifier] = movieObject;
+
+                })
+
+            })
+        document.getElementById("movieThumbnails").appendChild(genThumbnailSet(moviesSet));
+    }
     document.addEventListener("DOMContentLoaded", function () {
-        const movieObjectList = getMoviesObject();
         document.getElementById("topNavbar").appendChild(genNavbar("home"));
-        document.getElementById("movieThumbnails").appendChild(genThumbnailSet(movieObjectList));
+        loadMovies();
         document.getElementById("footer").appendChild(genFooter());
     })
+
 </script>
 </body>
 </html>

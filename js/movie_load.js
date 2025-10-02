@@ -1,4 +1,3 @@
-const MOVIES_URL = "https://localhost:3000/movies"
 
 const movieObjs =
     [
@@ -419,29 +418,40 @@ const movieObjs =
 
 
 async function getMoviesObject() {
-    try {
-        const response = await fetch(MOVIES_URL);
+    const moviesFetch = {}
+    await fetch(MOVIES_URL).then(res => {
+        res.json()
+        console.log(res)
+    }).catch((err) => {
 
-        if (!response.ok) {
-            console.log(Error(response.statusText));
-        } else {
+    })
 
-            const moviesSet = {}
-
-            const moviesFetch = await response.json();
-            console.log(moviesFetch);
-            moviesFetch.forEach(movieObject => {
-                const identifier = Date.now().toString() + Math.random().toString();
-                moviesSet[identifier] = movieObject;
-            });
-            return moviesSet;
-
-        }
-
-    } catch (error) {
-        console.log(error);
-
-    }
+    // try {
+    //     const response = await fetch(MOVIES_URL);
+    //
+    //     if (!response.ok) {
+    //         console.log('ERROR')
+    //         console.log(Error(response.statusText));
+    //     } else {
+    //
+    //         const moviesSet = {}
+    //
+    //         const moviesFetch = await response.json();
+    //         console.log('awaiting')
+    //         console.log(moviesFetch);
+    //         moviesFetch.forEach(movieObject => {
+    //             const identifier = Date.now().toString() + Math.random().toString();
+    //             moviesSet[identifier] = movieObject;
+    //         });
+    //         console.log(moviesSet);
+    //         return moviesSet;
+    //
+    //     }
+    //
+    // } catch (error) {
+    //     console.log(error);
+    //
+    // }
 
 }
 

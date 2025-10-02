@@ -1,3 +1,6 @@
+const MOVIES_URL = "http://localhost:3000/movies"
+
+
 function genThumbnail(movieKey, movieObject) {
     const link = "./movie_details.html?id=" + movieKey
 
@@ -26,6 +29,7 @@ function genThumbnail(movieKey, movieObject) {
 
 
 function genThumbnailSet(moviesSet) {
+    console.log('in gen thumbnails')
     console.log(moviesSet);
 
     let thumbnailList = document.createElement("div");
@@ -35,5 +39,21 @@ function genThumbnailSet(moviesSet) {
     })
     return thumbnailList
 }
-
+// async function getMoviesObject() {
+//     let moviesSet = {}
+//     await fetch(MOVIES_URL).then(res => res.json()).then(prom => {
+//         console.log('in gettting')
+//         console.log(prom);
+//         prom.forEach(movieObject => {
+//             console.log(movieObject);
+//
+//                         const identifier = Date.now().toString() + Math.random().toString();
+//                         moviesSet[identifier] = movieObject;
+//                         console.log(moviesSet[identifier]);
+//                     });
+//         return moviesSet
+//     }).catch((err) => {
+//         console.log(err)
+//     })
+// }
 
